@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Topics Covered</h2>
+    <ol type="I">
+        <li>HTML5 Images</li>
+        <li>Lists</li>
+        <li>Tables</li>
+        <li>Forms and Input Types</li>
+        <li>Multimedia Elements</li>
+    </ol>
+    
+    <!-- External Image -->
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Sample Image from Pexels" width="600">
+    
+    <!-- Table of 5 Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Kamau Mwangi</td>
+            <td>123 Moi Avenue, Nairobi</td>
+            <td>+254712345678</td>
+            <td>kamau@example.com</td>
+        </tr>
+        <tr>
+            <td>Akinyi Otieno</td>
+            <td>456 Kenyatta Road, Kisumu</td>
+            <td>+254798765432</td>
+            <td>akinyi@example.com</td>
+        </tr>
+        <tr>
+            <td>Mutiso Mwangangi</td>
+            <td>789 Uhuru Street, Mombasa</td>
+            <td>+254711223344</td>
+            <td>mutiso@example.com</td>
+        </tr>
+        <tr>
+            <td>Njeri Wanjiku</td>
+            <td>321 Kimathi Road, Nakuru</td>
+            <td>+254755667788</td>
+            <td>njeri@example.com</td>
+        </tr>
+        <tr>
+            <td>Otieno Ouma</td>
+            <td>654 Harambee Ave, Eldoret</td>
+            <td>+254799887766</td>
+            <td>otieno@example.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+        <br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="ke">Kenya</option>
+            <option value="tz">Tanzania</option>
+            <option value="ug">Uganda</option>
+            <option value="rw">Rwanda</option>
+        </select>
+        <br><br>
+        
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding"> <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music"> <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports"> <label for="sports">Sports</label>
+        <br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
